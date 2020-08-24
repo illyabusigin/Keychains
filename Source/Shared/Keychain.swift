@@ -67,7 +67,7 @@ public struct Keychain {
       kSecAttrAccount as String : account,
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword,
-      kSecAttrAccessible as String : kSecAttrAccessibleAlways] as [String : Any]
+      kSecAttrAccessible as String : kSecAttrAccessibleAfterFirstUnlock] as [String : Any]
 
     if !accessGroup.isEmpty {
       query[kSecAttrAccessGroup as String] = accessGroup
